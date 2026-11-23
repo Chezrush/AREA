@@ -1,31 +1,31 @@
 ## Description
 
-<!-- Ce que change cette PR, et pourquoi. -->
+<!-- What this PR changes, and why. -->
 
 Closes #
 
-## Type de changement
+## Type of change
 
-- [ ] Correction de bug (sans rupture de compatibilité)
-- [ ] Nouvelle fonctionnalité (sans rupture de compatibilité)
-- [ ] Changement cassant (contrat OpenAPI, format de workflow ou de `about.json` modifié)
-- [ ] Documentation, CI ou outillage uniquement
+- [ ] Bug fix (non-breaking)
+- [ ] New feature (non-breaking)
+- [ ] Breaking change (OpenAPI contract, workflow format or `about.json` format modified)
+- [ ] Documentation, CI or tooling only
 
-## Suivi
+## Tracking
 
-- [ ] PR assignée à moi, avec au moins un relecteur parmi les autres membres
-- [ ] Labels, milestone et Project renseignés
+- [ ] PR assigned to me, with at least one reviewer among the other members
+- [ ] Labels, milestone and Project set
 
-## Qualité
+## Quality
 
-- [ ] Lint, tests et build passent ; tests ajoutés ou mis à jour (succès et échec)
-- [ ] Entrées validées côté serveur (ou sans objet)
-- [ ] Description OpenAPI à jour, réponses d'erreur comprises, et test de contrat vert (ou sans objet)
-- [ ] Catalogue des services exposé par le serveur, sans liste codée en dur dans un client (ou sans objet)
-- [ ] Fonctionnalité visible présente sur le web **et** le mobile, ou issue ouverte pour l'autre client (ou sans objet)
-- [ ] Accessibilité WCAG AA et textes traduits dans toutes les langues sur les écrans touchés (ou sans objet)
-- [ ] Documentation à jour : README, HOWTOCONTRIBUTE, `docs/`, ADR (ou sans objet)
-- [ ] Preuve `SEC-*` à jour si une protection de sécurité est touchée (ou sans objet)
-- [ ] Entrée ajoutée dans `CHANGELOG.md` (ou sans objet)
-- [ ] Aucun secret ajouté, aucun jeton dans les logs ; variables d'environnement documentées dans `.env.example`
-- [ ] Section « Usage de l'IA » du README à jour si une IA a contribué de façon notable
+- [ ] Lint, tests and build pass; tests added or updated (success and failure paths)
+- [ ] Inputs validated on the server (or not applicable)
+- [ ] OpenAPI description up to date, error responses included, and contract test green (or not applicable)
+- [ ] Service catalogue exposed by the server, with no hard-coded list in a client (or not applicable)
+- [ ] Visible feature available on web **and** mobile, or an issue opened for the other client (or not applicable)
+- [ ] WCAG AA accessibility and texts translated into every supported language on the affected screens (or not applicable)
+- [ ] Documentation up to date: README, HOWTOCONTRIBUTE, `docs/`, ADR (or not applicable)
+- [ ] `SEC-*` evidence up to date if a security protection is affected (or not applicable)
+- [ ] Entry added to `CHANGELOG.md` (or not applicable)
+- [ ] No secret added, no token in logs; environment variables documented in `.env.example`
+- [ ] "Usage de l'IA" section of the README up to date if an AI tool contributed significantly
