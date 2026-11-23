@@ -1,0 +1,34 @@
+name: Tâche technique
+description: Outillage, configuration, CI/CD, documentation, comparatif de technologies, ADR ou tests, sans nouvelle fonctionnalité visible.
+labels: ["type:chore"]
+body:
+  - type: textarea
+    id: contexte
+    attributes:
+      label: Contexte
+      description: Pourquoi cette tâche est nécessaire.
+    validations:
+      required: true
+  - type: textarea
+    id: attendu
+    attributes:
+      label: Résultat attendu
+    validations:
+      required: true
+  - type: textarea
+    id: criteres
+    attributes:
+      label: Critères d'acceptation
+      value: |
+        - [ ] …
+    validations:
+      required: true
+  - type: textarea
+    id: hors-perimetre
+    attributes:
+      label: Hors périmètre
+  - type: textarea
+    id: dependances
+    attributes:
+      label: Dépendances
+      description: "« Bloquée par #… » ou « Bloque #… »."
