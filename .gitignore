@@ -1,0 +1,70 @@
+# Sujet : seuls les trois PDF du sujet sont versionnés (CLAUDE.md et les skills y renvoient)
+*.pdf
+!area-project.pdf
+!area-additional_features.pdf
+!area-security_evidence.pdf
+
+# Variables d'environnement (garder les .env.example)
+.env
+.env.*
+!.env.example
+!**/.env.example
+
+# Dépendances
+node_modules/
+.pnpm-store/
+vendor/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Builds et caches
+dist/
+build/
+out/
+target/
+.next/
+.vite/
+.turbo/
+.cache/
+coverage/
+*.tsbuildinfo
+
+# Android, Gradle, Flutter, Expo
+.gradle/
+local.properties
+*.keystore
+*.jks
+captures/
+.cxx/
+.externalNativeBuild/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.expo/
+
+# Artefacts produits par la stack (l'APK est construit, jamais commité)
+*.apk
+*.aab
+
+# Tests
+playwright-report/
+test-results/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Éditeurs et OS
+.vscode/
+.idea/
+*.iml
+*.swp
+.DS_Store
+Thumbs.db
+
+# Claude Code : réglages personnels (les skills partagées restent versionnées)
+.claude/settings.local.json
