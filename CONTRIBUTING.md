@@ -13,7 +13,7 @@ Pour ajouter un service, une Action, une REAction ou un type de nœud, voir auss
 5. **Relecture par un autre membre du groupe.** Personne ne merge sa propre PR sans relecture.
 6. **Merge** seulement quand les checks sont verts et la relecture approuvée. L'issue se ferme automatiquement.
 
-Personne ne pousse directement sur `main`. GitHub ne l'empêche pas techniquement, car le groupe n'a pas les droits pour protéger la branche : c'est à nous de le respecter.
+Personne ne pousse directement sur `main`. Tant que la branche n'est pas protégée sur GitHub (seul l'administrateur du dépôt peut le faire), c'est à nous de le respecter.
 
 ## Branches
 
@@ -71,7 +71,7 @@ Types : `feat`, `fix`, `docs`, `test`, `ci`, `refactor`, `perf`, `chore`, `build
 
 ## Intégration continue
 
-GitHub Actions n'est pas disponible sur le dépôt principal (facturation de l'organisation). La CI s'exécutera sur un dépôt miroir privé, et ses résultats apparaîtront comme checks dans les PR. La mise en place et le détail des jobs seront documentés dans `docs/`.
+La CI s'exécutera avec GitHub Actions sur ce dépôt, et ses résultats apparaîtront comme checks dans les PR. La mise en place et le détail des jobs seront documentés dans `docs/`.
 
 Si un check échoue, **on corrige la cause**. On ne désactive jamais un test, on n'ajoute pas de `skip` et on ne coupe pas une règle de lint pour faire passer la CI. Si la cause est hors de portée de la PR, on le signale dans la PR et on ouvre une issue. **Une PR sans checks n'est pas une PR verte.**
 
