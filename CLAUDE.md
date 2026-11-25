@@ -19,7 +19,9 @@ Sujet complet, à relire en cas de doute plutôt que supposer :
 - Fonctionnalités du catalogue retenues (D ≥ 6) : _à définir_, avec leur responsable
 - Question d'architecture de chaque membre : _à définir_
 - Langue de la documentation : **français**, partout. Les deux clients, eux, doivent être utilisables dans au moins deux langues.
-- Droits GitHub : le groupe n'est **pas administrateur** du dépôt. Pas de protection de branche, ni de secrets, ni d'environnements configurables par nous. GitHub Actions est bloqué sur les dépôts de l'organisation (facturation), comme sur le projet pro : la CI/CD s'exécutera sur un **miroir privé** synchronisé par le NAS, et ses résultats reviendront comme statuts de commit (à décrire dans un ADR). On travaille toujours sur le dépôt principal, jamais sur le miroir.
+- Dépôt de travail : **`Chezrush/AREA`** (public). Issues, branches et PR se font ici. Chezrush en est le seul administrateur : protection de `main`, secrets et environnements passent par lui. GitHub Actions y est disponible (dépôt public) : la CI/CD tourne directement sur ce dépôt (à décrire dans un ADR).
+- Dépôt Epitech `EpitechPGE3-2026/G-YEP-500-PAR-5-1-area-2` : dépôt d'origine, dont l'historique a été importé ici (#4). Sa resynchronisation au moment des rendus est _à définir_.
+- Suivi : GitHub Project **AREA** (n° 678, organisation `EpitechPGE3-2026`), qui accepte les issues de `Chezrush/AREA`.
 - Commandes (build, lancement Docker Compose, tests, lint) : _à définir avec la stack_
 
 ## Socle commun (non négociable)
@@ -54,7 +56,7 @@ Sujet complet, à relire en cas de doute plutôt que supposer :
 ## Workflow Git et GitHub
 
 - **Claude ne fait jamais `git commit` ni `git push`.** Il prépare les fichiers, puis indique les fichiers à ajouter et le message de commit. Ce sont les membres qui commitent et poussent.
-- Une tâche = une issue (responsable, labels `type:*` et `area:*`, milestone, statut dans le Project AREA) → une branche `<type>/<N>-<description>` → une pull request liée (`Closes #N`) → relue par un autre membre → merge. `main` n'est pas protégée : jamais de push direct, et jamais de merge tant que les checks ne sont pas verts. C'est à nous de le faire respecter.
+- Une tâche = une issue (responsable, labels `type:*` et `area:*`, milestone, statut dans le Project AREA) → une branche `<type>/<N>-<description>` → une pull request liée (`Closes #N`) → relue par un autre membre → merge. Jamais de push direct sur `main`, et jamais de merge tant que les checks ne sont pas verts. Tant que `main` n'est pas protégée par Chezrush, c'est à nous de le faire respecter.
 - Commits au format Conventional Commits (`feat:`, `fix:`, `docs:`, `test:`, `ci:`, `refactor:`, `chore:`…).
 - Aucun secret dans le dépôt ni dans l'historique. Toute nouvelle variable d'environnement est ajoutée et documentée dans `.env.example`, avec une valeur inoffensive.
 - Lockfiles commités, `.gitignore` à jour, pas de code mort ni de fichier orphelin.

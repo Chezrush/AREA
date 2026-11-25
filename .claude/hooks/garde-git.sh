@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Hook PreToolUse (Bash) : empêche Claude de pousser sur main ou de forcer un push.
-# Le workflow du projet impose issue → branche → PR relue, et main n'est pas protégée par GitHub
-# (le groupe n'est pas administrateur du dépôt). Les règles deny de settings.json interdisent déjà
+# Le workflow du projet impose issue → branche → PR relue, et main n'est pas forcément protégée par GitHub
+# (seul Chezrush, administrateur du dépôt, peut la protéger). Les règles deny de settings.json interdisent déjà
 # git commit et git push à Claude ; ce hook reste une seconde barrière si ces règles sont assouplies.
 # Code de sortie 2 = action bloquée, le message sur stderr est renvoyé à Claude.
 

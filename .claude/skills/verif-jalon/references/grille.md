@@ -99,7 +99,7 @@ Un service ou une Action sans cas d'usage concret : ⚠️ (« Quality » quanti
 
 ## C. CI/CD
 
-**C1. Automatisations sur chaque contribution** (M) : lint, tests et build ; un échec est visible sur la contribution (statut de commit ou check dans la PR). GitHub Actions est bloqué sur le dépôt principal : vérifier les statuts reçus par les derniers commits (`gh api repos/{owner}/{repo}/commits/<sha>/statuses`).
+**C1. Automatisations sur chaque contribution** (M) : lint, tests et build ; un échec est visible sur la contribution (statut de commit ou check dans la PR). Vérifier les exécutions (`gh run list --limit 20`) et les checks des dernières PR (`gh pr checks <N>`).
 
 **C2. Déploiement sans étape manuelle** (F).
 

@@ -17,8 +17,8 @@ Communiquer en français.
 
 ## Contexte fixe
 
-- Dépôt : `EpitechPGE3-2026/G-YEP-500-PAR-5-1-area-2`
-- GitHub Project : `AREA` (n° 678, organisation `EpitechPGE3-2026`). C'est le seul outil de suivi. Le livrable du jalon Plan exige un découpage où **chaque tâche est actionnable, planifiée, assignée et a ses dépendances identifiées**.
+- Dépôt : `Chezrush/AREA`
+- GitHub Project : `AREA` (n° 678, organisation `EpitechPGE3-2026`). Il appartient à l'organisation Epitech mais accepte les issues de `Chezrush/AREA`. C'est le seul outil de suivi. Le livrable du jalon Plan exige un découpage où **chaque tâche est actionnable, planifiée, assignée et a ses dépendances identifiées**.
 - Groupe : `gigabyteZ390`, `Chezrush`, `R0GW1N`. Le sujet demande une répartition équitable : signaler si les issues se concentrent sur une seule personne.
 - Sujet : serveur d'application, client web et client mobile Android pour composer des workflows (Action → REActions, une condition au plus). Les PDF sont à la racine (`area-project.pdf`, `area-additional_features.pdf`, `area-security_evidence.pdf`).
 
@@ -127,7 +127,7 @@ Attendre un **« ok » explicite**. Intégrer les modifications demandées, et r
 1. Écrire le corps dans un fichier temporaire, puis créer l'issue :
 
    ```bash
-   gh issue create --repo EpitechPGE3-2026/G-YEP-500-PAR-5-1-area-2 \
+   gh issue create --repo Chezrush/AREA \
      --title "<titre>" --body-file <fichier> \
      --assignee <login> --label "type:…" --label "area:…" \
      --milestone "<milestone>"
