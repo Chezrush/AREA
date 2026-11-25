@@ -1,0 +1,57 @@
+name: Fonctionnalité
+description: Proposer une fonctionnalité du socle commun ou du catalogue (serveur, client web, client mobile, service, nœud).
+labels: ["type:feature"]
+body:
+  - type: textarea
+    id: contexte
+    attributes:
+      label: Contexte
+      description: La situation actuelle, et le besoin réel de l'utilisateur final. Pour une fonctionnalité du catalogue, indiquer son identifiant (ENG-…, SEC-…, SYS-…, AI-…).
+    validations:
+      required: true
+  - type: textarea
+    id: attendu
+    attributes:
+      label: Comportement attendu
+      description: Ce que l'utilisateur ou le système peut faire une fois l'issue terminée.
+    validations:
+      required: true
+  - type: dropdown
+    id: clients
+    attributes:
+      label: Parties concernées
+      description: Une fonctionnalité visible n'est comptée que si elle existe sur le client le moins complet.
+      multiple: true
+      options:
+        - Serveur d'application
+        - Client web
+        - Client mobile Android
+        - Moteur de workflows ou hooks
+        - Service (Actions, REActions)
+    validations:
+      required: true
+  - type: textarea
+    id: criteres
+    attributes:
+      label: Critères d'acceptation
+      description: >-
+        Des conditions observables. Pour une fonctionnalité du catalogue, recopier ses critères
+        depuis area-additional_features.pdf sans les reformuler.
+      value: |
+        - [ ] …
+        - [ ] OpenAPI : endpoints et réponses d'erreur décrits (ou sans objet)
+        - [ ] Accessibilité WCAG AA et i18n : … (ou sans objet)
+        - [ ] Tests : succès et échec
+        - [ ] Documentation : …
+    validations:
+      required: true
+  - type: textarea
+    id: hors-perimetre
+    attributes:
+      label: Hors périmètre
+      description: Ce que cette issue ne couvre volontairement pas.
+  - type: textarea
+    id: dependances
+    attributes:
+      label: Dépendances
+      description: "« Bloquée par #… » ou « Bloque #… »."
