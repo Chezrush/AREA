@@ -1,0 +1,57 @@
+name: Bug
+description: Signaler un comportement incorrect.
+labels: ["type:bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Ce qui ne fonctionne pas, en une ou deux phrases.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Étapes pour reproduire
+      value: |
+        1. …
+        2. …
+        3. …
+    validations:
+      required: true
+  - type: textarea
+    id: attendu
+    attributes:
+      label: Résultat attendu
+    validations:
+      required: true
+  - type: textarea
+    id: obtenu
+    attributes:
+      label: Résultat obtenu
+      description: Ajouter si possible une capture d'écran ou un extrait de log, sans donnée personnelle, jeton ni secret.
+    validations:
+      required: true
+  - type: dropdown
+    id: partie
+    attributes:
+      label: Partie concernée
+      multiple: true
+      options:
+        - Serveur d'application (API)
+        - Client web
+        - Builder de workflows
+        - Client mobile Android
+        - Moteur de workflows ou hooks
+        - Service tiers (connecteur)
+        - Authentification (locale, OIDC, OAuth)
+        - Docker Compose, CI/CD
+    validations:
+      required: true
+  - type: input
+    id: environnement
+    attributes:
+      label: Environnement
+      description: Version (commit ou tag), navigateur ou appareil Android, par exemple « Pixel 7, Android 15 ».
+    validations:
+      required: true
